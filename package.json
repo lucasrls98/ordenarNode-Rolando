@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "name": "projeto-individual-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ordena.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./ordena.js"
+  },
+  "author": "Lucas Rolando",
+  "license": "ISC"
+}
