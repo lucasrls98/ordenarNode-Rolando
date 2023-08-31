@@ -14,3 +14,21 @@ function capturarEntradaUsuario() {
         capturarEntradaUsuario();
     }
 }
+
+function exibirPropriedadesOrdenadas() {
+    if (propriedadesCSS.length === 0) {
+        console.log('Nenhuma propriedade foi digitada.');
+    } else {
+        try {
+            const propriedadesOrdenadas = propriedadesCSS.sort();
+            console.log('Propriedades ordenadas:');
+            propriedadesOrdenadas.forEach(propriedade => {
+                console.log(propriedade);
+            });
+        } catch (erro) {
+            console.error('Ocorreu um erro ao ordenar as propriedades:', erro.message);
+        }
+    }
+}
+
+capturarEntradaUsuario();
